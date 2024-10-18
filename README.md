@@ -49,8 +49,8 @@ To run this project locally:
 
 Below is a sample of how the products are displayed on the webpage:
 
-![Products Page](/assets/images/screenshot2.png)
-*Product list showcasing the available desserts.*
+![Products Page](/assets/screenshot2.png)
+
 
 ## Future Enhancements
 
