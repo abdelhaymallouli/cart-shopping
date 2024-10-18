@@ -3,7 +3,7 @@ Here is the full code for your `README.md` that you can directly paste into your
 
 # Dessert Shop - Your Shop
 
-![Home Page](./assets/images/screenshot1.png)
+![Home Page](/assets/screenshot1.png)
 
 This project is a **simple dessert shop** webpage that displays various dessert products and allows users to add items to the cart. The website is built using HTML, CSS, and JavaScript. It features multiple dessert products with descriptions, prices, and an option to add items to the shopping cart.
 
@@ -52,7 +52,7 @@ To run this project locally:
 
 Below is a sample of how the products are displayed on the webpage:
 
-![Products Page](./assets/images/screenshot2.png)
+![Products Page](/assets/images/screenshot2.png)
 *Product list showcasing the available desserts.*
 
 ## Future Enhancements
