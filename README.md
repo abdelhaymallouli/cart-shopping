@@ -1,6 +1,3 @@
-Here is the full code for your `README.md` that you can directly paste into your file:
-
-
 # Dessert Shop - Your Shop
 
 ![Home Page](/assets/screenshot1.png)
