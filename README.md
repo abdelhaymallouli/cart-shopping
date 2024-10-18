@@ -1,26 +1,71 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3sJupFTN)
-# Liste de produits avec panier 🛒
+Here is the full code for your `README.md` that you can directly paste into your file:
 
-## Le défi
+```markdown
+# Dessert Shop - Your Shop
 
-Votre défi est de créer une liste de produits incluant un panier fonctionnel et de la rendre aussi proche du design que possible. Vous pouvez consulter le design dans le dossier `/design`.
+![Home Page](./assets/images/screenshot1.png)
 
-**BONUS:** Nous vous fournissons les données des produits dans un fichier local `data.json`. Vous pouvez donc utiliser ce fichier pour générer l'interface utilisateur dynamiquement si vous le souhaitez.
+This project is a **simple dessert shop** webpage that displays various dessert products and allows users to add items to the cart. The website is built using HTML, CSS, and JavaScript. It features multiple dessert products with descriptions, prices, and an option to add items to the shopping cart.
 
-Les utilisateurs doivent pouvoir :
+## Features
 
-- Ajouter et retirer des articles dans le panier
-- Augmenter/diminuer le nombre d'articles dans le panier
-- Voir une fenêtre de confirmation de commande lorsqu'ils cliquent sur "Confirmer la commande"
-- Réinitialiser leurs sélections lorsqu'ils cliquent sur "Commencer une nouvelle commande"
+- **Responsive Layout**: The webpage is optimized for different screen sizes using a flexible layout.
+- **Add to Cart**: Each product has an "Add to Cart" button to simulate adding items to a shopping cart.
+- **Beautiful Design**: The webpage uses custom fonts and images to give a stylish presentation of desserts.
 
-## Assets
+## Technologies Used
 
-Tous les éléments nécessaires pour ce projet se trouvent dans le dossier `/assets`. Les images sont déjà exportées aux tailles d'écran correctes et optimisées.
+- **HTML5**: For creating the structure of the webpage.
+- **CSS3**: For styling the page, including layout, fonts, and product presentation.
+- **JavaScript (ES6)**: For adding interactivity, such as handling the "Add to Cart" functionality.
+- **Google Fonts**: The project uses custom fonts from Google Fonts for a unique and clean look.
+- **Font Awesome**: Icons are used for a visually appealing "Add to Cart" button.
 
-Nous incluons également des fichiers de polices variables et statiques pour les polices requises pour ce projet. Vous pouvez choisir de lier à Google Fonts ou d'utiliser les fichiers de polices locaux pour héberger les polices vous-même. Notez que nous avons supprimé les fichiers de polices statiques pour les poids de police qui ne sont pas nécessaires pour ce projet.
+## File Structure
 
-Il y a également un fichier `style-guide.md` contenant les informations dont vous aurez besoin, telles que la palette de couleurs et les polices.
+- `index.html` - The main HTML structure of the webpage.
+- `style.css` - Stylesheet for the webpage's layout and design.
+- `myscripts.js` - JavaScript file that handles the interactivity, including adding products to the cart.
+- `assets/` - Folder that contains images of the desserts and icons for the cart functionality.
 
+## Setup and Installation
 
-**Amusez-vous en construisant!** 🚀
+To run this project locally:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/abdelhaymallouli/cart-shopping
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd your-shop
+   ```
+3. Open the `index.html` file in your browser to view the webpage.
+
+## Usage
+
+- **Viewing Products**: The website features a selection of dessert products. Each product is displayed with an image, name, description, and price.
+- **Adding to Cart**: Click on the "Add to Cart" button next to any product to simulate adding the product to the cart.
+- **Cart Display**: The selected products are shown in the cart section, which can be expanded for further functionality.
+
+## Screenshots
+
+Below is a sample of how the products are displayed on the webpage:
+
+![Products Page](./assets/images/screenshot2.png)
+*Product list showcasing the available desserts.*
+
+## Future Enhancements
+
+- Implement a real shopping cart system where users can see the added products, update quantities, and check out.
+- Add filtering functionality to categorize desserts based on type or price.
+- Improve the responsiveness for mobile devices.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+- **Your Name** - [GitHub Profile](https://github.com/abdelhaymallouli)
+
