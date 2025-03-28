@@ -4,16 +4,24 @@
       {
         "src": "code/**",
         "use": "@vercel/static"
+      },
+      {
+        "src": "assets/**",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "/code/(.*)",
         "dest": "/code/$1"
       },
       {
         "src": "/assets/(.*)",
         "dest": "/assets/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/code/index.html"
       }
     ]
   }
