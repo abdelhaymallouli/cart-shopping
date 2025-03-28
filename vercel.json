@@ -15,22 +15,14 @@
     ],
     "routes": [
       {
-        "src": "/restaurants(.*)",
-        "dest": "backend/server.js"
+        "src": "/api/(.*)",
+        "dest": "/backend/server.js",
+        "methods": ["GET", "POST", "PUT", "DELETE"]
       },
       {
         "src": "/(.*)",
-        "dest": "frontend/$1"
+        "dest": "/frontend/$1"
       }
-    ],
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          { "key": "Cache-Control", "value": "public, max-age=3600" }
-        ]
-      }
-    ],
-    "cleanUrls": true
+    ]
   }
   
