@@ -1,24 +1,36 @@
 {
-    "$schema": "https://openapi.vercel.sh/vercel.json",
     "version": 2,
     "builds": [
       {
-        "src": "code/**",
-        "use": "@vercel/static",
+        "src": "backend/server.js",
+        "use": "@vercel/node",
         "config": {
-          "distDir": "code",
-          "outputDirectory": "code"
+          "includeFiles": "backend/data/**"
         }
+      },
+      {
+        "src": "frontend/**",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
       {
+        "src": "/restaurants(.*)",
+        "dest": "backend/server.js"
+      },
+      {
         "src": "/(.*)",
-        "dest": "/code/$1"
+        "dest": "frontend/$1"
       }
     ],
-    "public": true,
-    "cleanUrls": true,
-    "trailingSlash": false
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=3600" }
+        ]
+      }
+    ],
+    "cleanUrls": true
   }
   
