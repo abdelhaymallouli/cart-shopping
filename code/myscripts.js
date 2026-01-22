@@ -129,11 +129,30 @@ function updateCart() {
       popup.style.display = "block";
     });
 
-    // Hide the popup
+    // Start New Order button functionality
     const closeBtn = document.getElementById("closeBtn");
     closeBtn.addEventListener("click", function () {
       const popup = document.getElementById("popup");
       popup.style.display = "none";
+      
+      // Reset cart and UI
+      cartItems = [];
+      updateCart();
+      
+      // Reset all product buttons to "Add to Cart" state
+      const productTypes = document.querySelectorAll(".product-type");
+      productTypes.forEach(productType => {
+        const quantityControl = productType.querySelector(".quantity-control");
+        if (quantityControl) {
+          quantityControl.remove();
+        }
+        
+        const addToCartButton = productType.querySelector(".add-to-cart");
+        addToCartButton.style.display = "block";
+        
+        const img = productType.querySelector("img");
+        if (img) img.style.border = "none";
+      });
     });
 
     // Delete button functionality
