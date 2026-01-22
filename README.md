@@ -25,9 +25,9 @@ A dynamic and responsive frontend e-commerce application for a Dessert Shop, bui
 - **CSS3**: Custom styling with variables, flexbox/grid, and media queries for responsiveness.
 - **FontAwesome**: Used for icons (cart, remove, etc.).
 
-## screenshots
+## 📸 Screenshots
 
-!
+![Project Screenshot](assets/image.png)
 
 ## 🚀 Setup & Usage
 
@@ -54,4 +54,3 @@ cart-shopping/
 │   └── myscripts.js # Application Logic
 └── README.md        # Project Documentation
 ```
-
